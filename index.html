@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<h1>Breiner Andres Iles Sambony</h1>
+<h2>Emerson Esneider Iles Sambony</h2>
+
+    <head>
+        <title>parcial</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS v5.2.1 -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous">
+        <link rel="stylesheet" href="./stiles.css">
+
+    </head>
+
+    <body>
+        <p id="app1">{{message}}</p>
+        <div id="app2">
+            <textarea type="text" id="textAre1" v-model="Text"></textarea>
+            <p style="width: 250px;">textto ingresado: "{{ Text }}" </p>
+        </div>
+
+        <div id="contador1">
+            <h1> contador </h1>
+            <p id="contador1">{{ "contados: " + count1 + message}}</p>
+            <button v-on:click="cont(1)">+1</button>
+            <button v-on:click="cont(-1)">-1</button>
+        </div>
+        <h1>3: Lista de Elementos</h1>
+        <h1> Utiliza una directiva v-for para mostrar cada fruta en una lista desordenada <ul>.</h1>
+        <p> Crea un nuevo componente llamado "ListaFrutas" que tenga una propiedad de
+          datos llamada "frutas" que sea un array con al menos tres nombres de frutas y su respectiva imagen.</p>
+        
+        <div id="app14">
+        
+          <lista-frutas :frutas="frutas"></lista-frutas>
+          
+          
+          </div>
+          
+<h1> Modifica el componente "ListaFrutas" para que cada elemento de la lista sea
+    un botón. .</h1>
+<p>Cuando se haga clic en un botón, debería eliminarse la fruta correspondiente del array.</p>
+
+<div id="app">
+
+  <lista-frutas :frutas="frutas" @eliminar-fruta="eliminarFruta"></lista-frutas>
+
+
+
+
+
+
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous">
+  </script>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+            crossorigin="anonymous">
+  </script>
+
+        <script src="https://unpkg.com/vue@3/dist/vue.global.js">  </script>
+        <script src="./funciones.js"></script>
+
+    </body>
+
+    <footer>
+        <h3>desing Breiner Andres Iles Sambony|| Emerson sneider Iles Sambony</h3>
+        <p>&copy; ITP</p>
+    </footer>
+
+</html>

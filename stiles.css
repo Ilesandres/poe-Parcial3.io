@@ -1,0 +1,50 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#app2 {
+    width: 300px;
+    padding: 25px;
+    border: 3px rgb(94, 91, 91) solid;
+
+}
+
+#app2:hover {
+    transition: 5s;
+    background-color: rgb(86, 93, 93);
+    color: #fff;
+}
+
+#app2>p {
+    width: 240px;
+
+}
+
+#app > div {
+    border: solid black 1px;
+    width: 80%;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  img {
+    width: 70px;
+    margin: 10px;
+  }
+  
+  #app > div {
+    border: solid black 1px;
+    width: 80%;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  img {
+    width: 70px;
+    margin: 10px;
+  }
